@@ -58,7 +58,7 @@ const ormi2 = {
 }
 ```
 
-![image](/img/240517_img0.png)
+![image](../img/240517_img0.png)
 
 ## 생성자
 
@@ -184,15 +184,16 @@ CreateOrmi.prototype.emotion = function(){
 
 결과
 
-![Untitled](/img/240517_img1.png)
+![Untitled](../img/240517_img1.png)
 
 객체의 메서드를 배열에서도 쓸 수 있게 된다.
 
 - 캡쳐사진
     
-    ![Untitled](/img/240517_img2.png)
+    ![Untitled](../img/240517_img2.png)
     
-    ![Untitled](/img/240517_img3.png)
+    ![Untitled](../img/240517_img3.png, )
+	
     
     프로토 타입 체이닝
     
