@@ -1,9 +1,3 @@
-# 제목 없음
-
-작성일시: 2024년 5월 11일 오전 1:04
-복습: No
-최종 편집 일시: 2024년 5월 17일 오후 4:46
-최종 편집자: 이상윤
 
 # 객체지향 프로그래밍
 
@@ -64,7 +58,7 @@ const ormi2 = {
 }
 ```
 
-![Untitled](/img/240517_img0.png.png)
+![image](/img/240517_img0.png)
 
 ## 생성자
 
@@ -190,15 +184,15 @@ CreateOrmi.prototype.emotion = function(){
 
 결과
 
-![Untitled](/img/240517_img1.png.png)
+![Untitled](/img/240517_img1.png)
 
 객체의 메서드를 배열에서도 쓸 수 있게 된다.
 
 - 캡쳐사진
     
-    ![Untitled](/img/240517_img2.png.png)
+    ![Untitled](/img/240517_img2.png)
     
-    ![Untitled](/img/240517_img3.png.png)
+    ![Untitled](/img/240517_img3.png)
     
     프로토 타입 체이닝
     
