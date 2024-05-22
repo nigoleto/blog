@@ -1,18 +1,20 @@
 
 # 13일차 - 프로젝트    
-    
-	    
+<br/>
+<br/>   
 
 ## 카카오 지도 api 불러오기
 
 ![지도가 들어갈 자리](img/240522/0.png)
 
          지도가 들어갈 자리
-
+<br/>
+<br/>
+<br/>
 1. *[카카오 개발자사이트](https://developers.kakao.com/)* (https://developers.kakao.com) 접속
-    
-    
-	   
+<br/>
+<br/>
+<br/>   
 2. 개발자 등록 및 앱 생성
 
 ![Untitled](img/240522/1.png)
@@ -20,40 +22,40 @@
 ![Untitled](img/240522/2.png)
 
 ![Untitled](img/240522/3.png)
-    
-    
-	   
+<br/>
+<br/>
+<br/>   
 3. 웹 플랫폼 추가: 앱 선택 – [플랫폼] – [Web 플랫폼 등록] – 사이트 도메인 등록
 
 ![Untitled](img/240522/4.png)
-    
-    
-	   
+<br/>
+<br/>
+<br/>
 4. 사이트 도메인 등록: [웹] 플랫폼을 선택하고, [사이트 도메인] 을 등록합니다. (예: [http://localhost:8080](http://localhost:8080/))
 
 ![경로를 제외한 프로토콜, 도메인 이름, 포트만 포함될 수 있습니다.](img/240522/5.png)
 
 경로를 제외한 프로토콜, 도메인 이름, 포트만 포함될 수 있습니다. 
 (O) [https://example.com](https://example.com/)             (X) [https://example.com/](https://example.com/)
-    
-    
-	   
+<br/>
+<br/>
+<br/>
 5. 페이지 상단의 [JavaScript 키]를 지도 API의 appkey로 사용합니다.
 
 ![Untitled](img/240522/6.png)
-    
-    
-	       
-    
-	   
+<br/>
+<br/>
+<br/><br/>
+<br/>
+<br/>
 1. <body> 안에 지도를 넣을 영역 만들기
 
 ```jsx
 <div id="map" style="width:500px;height:400px;"></div>
 ```
-    
-    
-	   
+<br/>
+<br/>
+<br/>
 2. 실제 지도를 그리는 Javascript API를 불러오기
 
 ```jsx
@@ -64,9 +66,9 @@
 ```
 
 ![Untitled](img/240522/6.png)
-    
-    
-	   
+<br/>
+<br/>
+<br/>
 3. 지도를 띄우는 코드 작성
 
 ```jsx
@@ -102,24 +104,31 @@ var map=new kakao.maps.Map(container, options);
 </body>
 </html>
 ```
-    
-    
-	       
-    
-	   
+<br/>
+<br/>
+<br/><br/>
+<br/>
+<br/>
 ## 지도 내부 그리드 Radius 제거
-    
-    
+<br/>
+<br/>
 **problem**
      
    
 ![Untitled](img/240522/7.png)
+<br/>
+<br/>
+
 
 원인
 
 모든 이미지에 대한 스타일이 적용 되어있을 경우 지도에는 저렇게 나타나게 된다. 
 
 지도를 나타낼 때 작은 이미지들을 여러개 불러와서 지도를 나타내는 것이기 때문
+
+<br/>
+<br/>
+
 
 **solution**
 
