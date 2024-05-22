@@ -1,11 +1,7 @@
-# 11일차-프로젝트
 
-작성일시: 2024년 5월 22일 오후 2:48
-복습: No
-최종 편집 일시: 2024년 5월 22일 오후 2:49
-최종 편집자: 이상윤
-
-# 13일차 - 프로젝트
+# 13일차 - 프로젝트    
+    
+	    
 
 ## 카카오 지도 api 불러오기
 
@@ -14,7 +10,9 @@
          지도가 들어갈 자리
 
 1. *[카카오 개발자사이트](https://developers.kakao.com/)* (https://developers.kakao.com) 접속
-
+    
+    
+	   
 2. 개발자 등록 및 앱 생성
 
 ![Untitled](img/240522/1.png)
@@ -22,29 +20,41 @@
 ![Untitled](img/240522/2.png)
 
 ![Untitled](img/240522/3.png)
-
+    
+    
+	   
 3. 웹 플랫폼 추가: 앱 선택 – [플랫폼] – [Web 플랫폼 등록] – 사이트 도메인 등록
 
 ![Untitled](img/240522/4.png)
-
+    
+    
+	   
 4. 사이트 도메인 등록: [웹] 플랫폼을 선택하고, [사이트 도메인] 을 등록합니다. (예: [http://localhost:8080](http://localhost:8080/))
 
 ![경로를 제외한 프로토콜, 도메인 이름, 포트만 포함될 수 있습니다.](img/240522/5.png)
 
 경로를 제외한 프로토콜, 도메인 이름, 포트만 포함될 수 있습니다. 
 (O) [https://example.com](https://example.com/)             (X) [https://example.com/](https://example.com/)
-
+    
+    
+	   
 5. 페이지 상단의 [JavaScript 키]를 지도 API의 appkey로 사용합니다.
 
 ![Untitled](img/240522/6.png)
-
+    
+    
+	       
+    
+	   
 1. <body> 안에 지도를 넣을 영역 만들기
 
 ```jsx
 <div id="map" style="width:500px;height:400px;"></div>
 ```
-
-1. 실제 지도를 그리는 Javascript API를 불러오기
+    
+    
+	   
+2. 실제 지도를 그리는 Javascript API를 불러오기
 
 ```jsx
 <script 
@@ -54,8 +64,10 @@
 ```
 
 ![Untitled](img/240522/6.png)
-
-1. 지도를 띄우는 코드 작성
+    
+    
+	   
+3. 지도를 띄우는 코드 작성
 
 ```jsx
 var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
@@ -90,11 +102,17 @@ var map=new kakao.maps.Map(container, options);
 </body>
 </html>
 ```
-
+    
+    
+	       
+    
+	   
 ## 지도 내부 그리드 Radius 제거
-
+    
+    
 **problem**
-
+     
+   
 ![Untitled](img/240522/7.png)
 
 원인
