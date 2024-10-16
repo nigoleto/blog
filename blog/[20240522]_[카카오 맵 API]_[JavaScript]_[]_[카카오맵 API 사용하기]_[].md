@@ -120,7 +120,7 @@ var map=new kakao.maps.Map(container, options);
 <br/>
 
 
-원인
+**원인**
 
 모든 이미지에 대한 스타일이 적용 되어있을 경우 지도에는 저렇게 나타나게 된다. 
 
