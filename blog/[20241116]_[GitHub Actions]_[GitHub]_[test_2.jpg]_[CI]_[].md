@@ -1,16 +1,22 @@
 # GitHub Actions: CI/CD와 Docker 기본 이해
 
+<br>
+
 ## 1. Docker 기본 개념
 Docker는 애플리케이션을 가상 환경에서 **컨테이너(Container)** 형태로 실행할 수 있도록 지원하는 도구다. 컨테이너는 애플리케이션과 그에 필요한 모든 의존성을 하나의 패키지로 묶어 어디서든 동일한 환경에서 실행할 수 있게 한다.
 
-### Docker의 장점
-- **환경 일관성**: 개발 환경과 운영 환경의 차이를 없앰.
-- **이식성**: Docker 이미지를 사용하여 다양한 환경에서 동일한 애플리케이션 실행 가능.
+  ### Docker의 장점
+  - **환경 일관성**: 개발 환경과 운영 환경의 차이를 없앰.
+  - **이식성**: Docker 이미지를 사용하여 다양한 환경에서 동일한 애플리케이션 실행 가능.
 
-### 활용 예
-예를 들어, 개발 환경과 운영 환경이 다르더라도 Docker 이미지를 사용하면 동일한 환경에서 애플리케이션이 작동한다.
+  ### 활용 예
+  예를 들어, 개발 환경과 운영 환경이 다르더라도 Docker 이미지를 사용하면 동일한 환경에서 애플리케이션이 작동한다.
+
+<br>
 
 ---
+
+<br>
 
 ## 2. Docker 기반 CI/CD 구성 흐름
 Docker와 CI/CD 시스템(Jenkins, GitHub Actions 등)을 연동하면 **통합**과 **배포** 과정을 자동화할 수 있다.
@@ -40,7 +46,11 @@ Docker와 CI/CD 시스템(Jenkins, GitHub Actions 등)을 연동하면 **통합*
 - **CD 단계**: 새로운 Docker 이미지를 배포 서버에 자동으로 배포한다.
 - **배포 도구**: Docker Compose 또는 Kubernetes를 활용할 수 있다.
 
+<br>
+
 ---
+
+<br>
 
 ## 3. GitHub Actions 기본 이해
 GitHub Actions는 코드 변경 시 자동으로 빌드, 테스트, 배포 작업을 수행하도록 설정할 수 있는 도구다.
@@ -50,7 +60,11 @@ GitHub Actions는 코드 변경 시 자동으로 빌드, 테스트, 배포 작�
 - **워크플로우(Workflow)**: 작업 정의 파일(`.yml`)로 설정하며, `.github/workflows/` 폴더에 저장한다.
 - **트리거**: `push`, `pull_request`, `schedule` 등 이벤트에 따라 실행한다.
 
+<br>
+
 ---
+
+<br>
 
 ## 4. GitHub Actions의 기본 구조
 GitHub Actions 워크플로우는 YAML 형식으로 작성한다. 주요 구성 요소는 다음과 같다.
@@ -80,6 +94,12 @@ jobs:
       - name: Run a one-line script
         run: echo "Hello, GitHub Actions!"
 ```
+
+<br>
+
+---
+
+<br>
 
 ## 5. 요약 및 활용
 Docker와 GitHub Actions를 활용하여 CI/CD 파이프라인을 구성하면 자동화된 배포 환경을 구현할 수 있다. 이를 통해 반복적인 작업을 줄이고, 신속하면서도 안정적인 애플리케이션 배포가 가능하다.
